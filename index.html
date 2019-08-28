@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurants Admin Home</title>
+    <!-- this minified css file for bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>لوحة</span>
+                <span>التحكم</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">المستخدمين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">المطاعم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التوصيل</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            مرحبا أدمن
+                        </a>
+                        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">زيارة الموقع</a>
+                            <a class="dropdown-item" href="#">تعديل بياناتى</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">تسجيل الخروج</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Statestics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-counter primary">
+                        <i class="fa fa-code-fork"></i>
+                        <span class="count-numbers">12</span>
+                        <span class="count-name">عامل توصيل</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card-counter danger">
+                        <i class="fa fa-ticket"></i>
+                        <span class="count-numbers">41</span>
+                        <span class="count-name">مطعم</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card-counter success">
+                        <i class="fa fa-database"></i>
+                        <span class="count-numbers">59</span>
+                        <span class="count-name">طلب</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card-counter info">
+                        <i class="fa fa-users"></i>
+                        <span class="count-numbers">23</span>
+                        <span class="count-name">مستخدم</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Section Advertise -->
+    <section class="ads">
+        <div class="container">
+            <div class="card">
+                <div class="card-header text-center"><b>وصف لوحة التحكم فى خطوات</b></div>
+                <div class="card-body row">
+                    <ol class="col-md-6">
+                        <li>اضافة وتعديل وحف بيانات المستخدمين للنظام.</li>
+                        <li>اضافة وتعديل وحذف المطاعم بناء على رغبة الادمن.</li>
+                        <li>اعطاء قيمة محددة من الاموال لكل مطعم ينتقص منها بناء على الطلبات الواردة للمطعم والتى تم
+                            تسليمها.</li>
+                        <li>امكانيه عمل بلوك لاي مطعم بناء على رغبة الادمن.</li>
+                        <li>اضافة عمال توصيل وربطهم بالمطاعم. والقدرة على التعديل والحذف منهم.</li>
+                    </ol>
+                    <div class="col-md-6">
+                        <img src="img/aa.gif" alt="" class="d-block w-100 mb-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Start Footer -->
+    <footer class="text-center">
+        <p class="lead">جميع الحقوق محفوظة &copy; 2019 <strong>لوحة التحكم</strong></p>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- This Required js libraries for bootstrap 4 -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
