@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurants Admin Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>لوحة</span>
+                <span>التحكم</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.html">المستخدمين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="restaurants.html">المطاعم</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="delivery.html">التوصيل</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            مرحبا أدمن
+                        </a>
+                        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">زيارة الموقع</a>
+                            <a class="dropdown-item" href="#">تعديل بياناتى</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">تسجيل الخروج</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <h1 class="text-center">بيانات عمال التوصيل</h1><br>
+
+    <section class="users text-center" dir="rtl">
+        <div class="container">
+
+            <!-- Table of Users -->
+            <table class="table table-striped table-hover table-bordered table-responsive-lg">
+                <thead>
+                    <tr>
+                        <th scope="col">الرقم التسلسلى</th>
+                        <th scope="col">عامل التوصيل</th>
+                        <th scope="col">اسم العامل</th>
+                        <th scope="col">فعال</th>
+                        <th scope="col">التحكم</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">#1</th>
+                        <td>sterio_delivery1</td>
+                        <td>Mohamed Khaled</td>
+                        <td><i class="fa fa-circle-o"></i></td>
+                        <td>
+                            <button class="btn btn-sm btn-info" data-toggle="modal"
+                                data-target="#editRestaurant">تعديل</button>
+                            <button class="btn btn-sm btn-danger">حذف</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#2</th>
+                        <td>adams_delivery1</td>
+                        <td>Omar Mostafa</td>
+                        <td><i class="fa fa-circle"></i></td>
+                        <td>
+                            <button class="btn btn-sm btn-info" data-toggle="modal"
+                                data-target="#editRestaurant">تعديل</button>
+                            <button class="btn btn-sm btn-danger">حذف</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Message of Success -->
+            <div class="alert alert-success alert-dismissible d-none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>نجاح!</strong> تم الحفظ بنجاح
+            </div>
+
+            <!-- Message of Error -->
+            <div class="alert alert-danger alert-dismissible d-none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>خطأ!</strong> حدث خطأ ما يرجي مراجعه البيانات
+            </div>
+
+            <!-- Add New User Button -->
+            <button type="button" class="btn btn-info pull-right" data-toggle="modal"
+                data-target="#newDelivery">اضافة
+                عامل توصيل جديد</button><br><br>
+
+            <!-- Add New User Modal -->
+            <div class="modal fade" id="newDelivery" tabindex="-1" role="dialog" aria-labelledby="addNewDelivery"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addNewDelivery">اضافة عامل توصيل جديد</h5>
+                            <button type="button" class="close mx-0" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" role="form" name="formData">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="عامل التوصيل" required
+                                        id="username" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الاسم بالكامل" required
+                                        id="limitBudget" name="limitBudget">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="كلمة المرور" required
+                                        id="password" name="password">
+                                </div>
+                                <button type="submit" class="btn btn-info pull-right" data-dismiss="modal">حفظ
+                                    عامل توصيل</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update User Model -->
+            <div class="modal fade" id="editDelivery" tabindex="-1" role="dialog" aria-labelledby="editDeliverys"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editDeliverys">تعديل بيانات عامل توصيل</h5>
+                            <button type="button" class="close mx-0" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="عامل توصيل" required
+                                        id="username" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الاسم بالكامل" required
+                                        id="email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="كلمة المرور" required
+                                        id="password" name="password">
+                                </div>
+                                <button type="submit" class="btn btn-info pull-right" data-dismiss="modal">تعديل
+                                    عامل توصيل</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <hr>
+    <!-- Start Footer -->
+    <footer class="text-center">
+        <p class="lead">جميع الحقوق محفوظة &copy; 2019 <strong>لوحة التحكم</strong></p>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- This Required js libraries for bootstrap 4 -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
