@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>كنترول المطعم</title>
+    <!-- this minified css file for bootstrap 4 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/restaurant.css">
+</head>
+
+<body>
+    <nav dir="rtl" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <span>كنترول</span>
+                <span>المطعم</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="categories.html">الأقسام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">الطلبات</a>
+                    </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                    Navbar text with an inline element
+                </span> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            مدير المطعم
+                        </a>
+                        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../index.html">زيارة الموقع</a>
+                            <a class="dropdown-item" href="settings.html">اعدادات المطعم</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../login.html">تسجيل الخروج</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <h1 class="text-center">بيانات المطعم</h1><br>
+
+    <section class="Catergorys text-center" dir="rtl">
+        <div class="container">
+            <form method="post" role="form" name="formData">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="اسم المطعم" required id="rest_name"
+                        name="rest_name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="مواعيد العمل من الى" required id="rest_work_date"
+                        name="rest_work_date">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="وصف المطعم" required id="rest_desc"
+                        name="rest_desc"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info pull-right" data-dismiss="modal">حفظ
+                    البيانات</button>
+            </form>
+
+        </div>
+    </section>
+
+    <br><br>
+    <hr>
+    <!-- Start Footer -->
+    <footer class="text-center">
+        <p class="lead">جميع الحقوق محفوظة &copy; 2019 <strong>كنترول المطعم</strong></p>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- This Required js libraries for bootstrap 4 -->
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
