@@ -233,3 +233,10 @@ nav.navbar {
     text-align: right;
 }
 /* end home page */
+
+
+
+/* new style for restaurant */
+.table td, .table th {
+  vertical-align: middle !important;
+}
