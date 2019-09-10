@@ -108,3 +108,10 @@
     justify-content: center;
     align-items: center;
 }
+
+input.btnRegister:focus {
+    outline: none;
+}
+input[type="submit"]:focus {
+    outline: none;
+}
