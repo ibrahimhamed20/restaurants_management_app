@@ -240,3 +240,10 @@ nav.navbar {
 .table td, .table th {
   vertical-align: middle !important;
 }
+
+/* new style for admin login */
+@media (max-width: 991px) {
+  #LoginForm .main-div{
+    max-width: 100%;
+  }
+}

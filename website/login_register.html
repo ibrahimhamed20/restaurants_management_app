@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>مطعمنا</title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section class="container register my-2" dir="rtl">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                <h3>مرحبا</h3>
+                <p>لديك 30 ثانيه للتسجيل والحصول على وجباتك المتميزة من مطعمنا</p>
+                <input type="submit" name="" value="تصفح المطعم" /><br />
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="custom-ul">
+                    <ul class="nav nav-tabs nav-justified p-0" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">حساب جديد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">تسجيل دخول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">حساب جديد لعميل مطعمنا</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الاسم بالكامل" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="اسم المستخدم" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="كلمة المرور" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="تأكيد كلمة المرور"
+                                        value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone"
+                                        class="form-control" placeholder="رقم الهاتف" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option class="hidden" selected disabled>من فضلك اختار المدينة التى تقيم بها
+                                        </option>
+                                        <option>القاهرة</option>
+                                        <option>الإسكندرية</option>
+                                        <option>طنطا</option>
+                                        <option>المنصورة</option>
+                                        <option>المحلة الكبري</option>
+                                        <option>كفر الشيخ</option>
+                                        <option>الزقازيق</option>
+                                        <option>دمياط</option>
+                                        <option>بنها</option>
+                                        <option>دمنهور</option>
+                                        <option>شبين الكوم</option>
+                                        <option>آخري</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="عنوانك بالتفصيل" value="" />
+                                </div>
+                                <input type="submit" class="btnRegister" value="تسجيل الحساب" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">تسجيل الدخول للمطعم</h3>
+                        <div class="row register-form">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="اسم المستخدم" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="كلمة المرور" value="" />
+                                </div>
+                                <input type="submit" class="btnRegister" value="تسجيل الدخول" />
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
