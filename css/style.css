@@ -1,12 +1,14 @@
 /* import fonts */
 @import url('../fonts/fonts.css');
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700&display=swap');
 /* end impport */
 
 /* gerneral css */
 *, body {
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'El Messiri', sans-serif;
 }
 .register{
+    font-family: 'Tajawal', sans-serif !important;
     /* background: -webkit-linear-gradient(right, #3931af, #00c6ff); */
     background: -webkit-linear-gradient(right, #008080, #17a2b8);
     margin-top: 3%;
@@ -115,3 +117,113 @@ input.btnRegister:focus {
 input[type="submit"]:focus {
     outline: none;
 }
+
+/* new code style start page */
+/***************Header*********************/
+
+.main_header {
+    border-top: 3px solid teal;
+}
+
+.first_header .times .description {
+    width: 175px !important;
+    padding: 16px;
+    display: inline-block;
+    margin-left: 5px;
+    text-align: left;
+    line-height: 1.1;
+    font-weight: bold;
+    color: #607D8B;
+}
+
+.first_header .times .phone {
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 1px solid #ddd;
+    padding-left: 50px;
+    padding-right: 20px;
+    color: #607D8B;
+}
+
+.first_header .times .phone span {
+    color: #019e91;
+    font-size: 38px;
+    position: relative;
+    top: 2px;
+}
+
+.first_header .sign_in {
+    padding: 32px 0px;
+    /* color: dimgray;
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold; */
+}
+
+.first_header .sign_in a {
+    width: 200px;
+    color: #008080;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #008080;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+}
+
+.first_header .sign_in a:hover {
+    color: white;
+    background-color: teal;
+    border: 2px solid teal;
+    transition: all 1s ease-in-out;
+}
+
+/*************Navbar************/
+
+nav.navbar {
+    border: 1px solid #008080;
+    box-shadow: 0px 4px 20px rgba(0, 128, 128, 0.23);
+    background-color: #008080;
+}
+.navbar-brand > span {
+    font-size: 36px;
+  }
+  .navbar-brand span:first-child {
+    color: teal;
+    font-weight: bold;
+  }
+  .navbar-brand span:last-child {
+    color: #333;
+  }
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff !important;
+    letter-spacing: 0.5px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  /* .navbar-nav .nav-link:hover {
+    color: #008080 !important;
+    background-color: #ffffff;
+    border-radius: 20px 0px;
+  } */
+  .navbar-nav .active > .nav-link,
+  .navbar-nav .nav-link:hover {
+    color: #008080 !important;
+    background-color: #ffffff;
+    border-radius: 20px 0px;
+  }
+.carousel-item img {
+    height: 500px !important;
+}
+  .carousel-caption {
+    bottom: 180px !important;
+    background-color: #008080b8;
+  }
