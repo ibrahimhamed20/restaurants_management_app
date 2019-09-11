@@ -1,15 +1,13 @@
 /* import fonts */
 @import url('../fonts/fonts.css');
-@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700&display=swap');
 /* end impport */
 
 /* gerneral css */
 *, body {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 .register{
     font-family: 'Tajawal', sans-serif !important;
-    /* background: -webkit-linear-gradient(right, #3931af, #00c6ff); */
     background: -webkit-linear-gradient(right, #008080, #17a2b8);
     margin-top: 3%;
     padding: 3%;
@@ -19,7 +17,7 @@
     color: #fff;
     margin-top: 4%;
 }
-.register-left input{
+.register-left a{
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
@@ -30,6 +28,7 @@
     margin-top: 30%;
     margin-bottom: 3%;
     cursor: pointer;
+    text-decoration: none;
 }
 .register-right{
     background: #f8f9fa;
@@ -92,7 +91,6 @@
     border: none;
 }
 .register .nav-tabs .nav-link.active{
-    /* width: 100px; */
     color: #17a2b8;
     border: 2px solid #17a2b8;
     border-top-left-radius: 1.5rem;
@@ -154,12 +152,6 @@ input[type="submit"]:focus {
 
 .first_header .sign_in {
     padding: 32px 0px;
-    /* color: dimgray;
-    float: right;
-    width: 50%;
-    text-align: right;
-    font-size: 16px;
-    font-weight: bold; */
 }
 
 .first_header .sign_in a {
@@ -209,16 +201,11 @@ nav.navbar {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
   }
-  /* .navbar-nav .nav-link:hover {
-    color: #008080 !important;
-    background-color: #ffffff;
-    border-radius: 20px 0px;
-  } */
   .navbar-nav .active > .nav-link,
   .navbar-nav .nav-link:hover {
     color: #008080 !important;
     background-color: #ffffff;
-    border-radius: 20px 0px;
+/*     border-radius: 20px 0px; */
   }
 .carousel-item img {
     height: 500px !important;
@@ -227,3 +214,130 @@ nav.navbar {
     bottom: 180px !important;
     background-color: #008080b8;
   }
+/* new features */
+.nicebar {
+    background-color: #008080 !important;
+}
+
+.topFeatures {
+    margin-bottom: 20px;
+}
+
+.custom-li {
+    border-left: 2px solid #8b8c8e;
+    border-right: 2px solid #8b8c8e;
+}
+
+/* restaurants style */
+
+.restaurants .card {
+    box-shadow: 0px 4px 12px rgba(0, 128, 128, 0.3);
+}
+.restaurants .card:hover {
+    box-shadow: 2px 8px 24px rgba(0, 128, 128, 0.3);
+}
+
+.restaurants .h3-col {
+    color: #008080;
+}
+
+.restaurants .a-link {
+    color: #a5a5a5;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.available {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: teal;
+    color: #fff;
+    border-radius: 0px 3px 0px 15px;
+}
+
+.card-img-top {
+    height: 175px;
+}
+
+/* Start Footer */
+footer{
+    background-color: #008080;
+    color: #6c6c6c;
+    padding: 40px 0 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+footer .column h2{
+    color: #fff;
+    font-size: 30px
+}
+footer .column p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #f6f6f6;
+    text-align: justify;
+}
+footer .column i {
+    display: inline-block;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    width: 40px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+footer .column i.fa-google-plus:hover{
+    background-color: red;
+    color: #fff;
+}
+footer .column i.fa-facebook:hover{
+    color: #fff;
+    background-color: #3489db;
+}
+footer .depts h3{
+    color: white;
+}
+footer .depts p a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+footer .depts p a:hover{
+    /* color: #3489db;
+    transition: all 1s ease; */
+    color: #008080;
+    transition: all 0.4s ease;
+    background-color: #fff;
+    padding: 5px 15px;
+}
+footer .tags span {
+    display: inline-block;
+    color: #f1f1f1;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 109px;
+    text-align: center;
+}
+footer .copyright{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ababab;
+    text-align: center;
+    color: white
+}
+/* End Footer */
+
+.my-card
+{
+    position:absolute;
+    left:39%;
+    top:-20px;
+    border-radius:50%;
+}
