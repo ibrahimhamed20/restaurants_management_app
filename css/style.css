@@ -220,7 +220,7 @@ nav.navbar {
   .navbar-nav .nav-link:hover {
     color: #008080 !important;
     background-color: #ffffff;
-    border-radius: 20px 0px;
+/*     border-radius: 20px 0px; */
   }
 .carousel-item img {
     height: 500px !important;
