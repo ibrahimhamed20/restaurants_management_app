@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>مطعمنا</title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="main_header" dir="rtl">
+        <div class="container first_header">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <a class="navbar-brand" href="start.html">
+                        <span>مطعمنا</span>
+                        <span>للجميع</span>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="times">
+                        <span class="description">نسعد بخدمتـــكم من 9 صباحا الى 9 مســاء</span>
+                        <span class="phone">12<span>3</span>45</span>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <!-- <div class="sign_in">
+                        <div class="btn-group">
+                            <a href="login_register.html" class="btn btn-light rounded-0 p-2"><i
+                                    class="fa fa-user-circle-o" aria-hidden="true"></i> تسجيل الدخول</a>
+                        </div>
+                    </div> -->
+                    <div class="dropdown py-4">
+                        <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            مرحبا أدمن
+                        </button>
+                        <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">طلباتى السابقة</a>
+                            <a class="dropdown-item" href="#">تعديل بياناتى</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">تسجيل الخروج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second_header">
+            <nav dir="rtl" class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler bg-white rounded-0" type="button" data-toggle="collapse"
+                        data-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="start.html"><i class="fa fa-home fa-lg"></i>
+                                    الرئيسية<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="restaurants.html"><i class="fa fa-cutlery"></i>
+                                    المطاعم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2" href="about.html"><i class="fa fa-info-circle fa-lg"
+                                        style="font-size: 1.2em;"></i> من نحن</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link px-3 mx-2" href="contact.html"><i class="fa fa-envelope"></i> اتصل
+                                    بنا</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 mx-2 btn-info rounded-0" href="#" role="button">سلة
+                                    المشتريات</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--=======================Carousel=========================-->
+    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel" dir="rtl">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/slider/bg1.jpg" width="100%" alt="Los Angeles">
+                <div class="carousel-caption">
+                    <h3>مطعمنا للجميع</h3>
+                    <p>يوجد لدينا العديد من المطاعم الجاهزة لاستقبال طلبك</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/slider/bg2.jpg" width="100%" alt="Chicago">
+                <div class="carousel-caption">
+                    <h3>توصيل الطلبات للمنزل مهمتنا</h3>
+                    <p>تنفيذ طلبك وتوصصيله الى منزلك مهمتنا لان راحتك تهمنا</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/slider/bg3.jpg" width="100%" alt="New York">
+                <div class="carousel-caption">
+                    <h3>لدينا العديد من الافرع</h3>
+                    <p>نحن نسعي لتحقيق المزيد من خدمة عملائنا وراحتهم</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <!-- /.carousel -->
+
+    <!--==== some features ====-->
+    <div class="nicebar">
+        <div class="container">
+            <h1 class="text-center text-white py-4">تفاصيل البيتزا</h1>
+        </div>
+    </div>
+    <!-- /.features -->
+
+    <!--============================ about ============================-->
+    <div class="container product" dir="rtl">
+        <div class="card xyz">
+            <div class="container-fliud">
+                <div class="wrapper row">
+                    <div class="preview col-md-6">
+
+                        <div class="preview-pic">
+                            <img class="w-100 img-thumbnail" src="http://placekitten.com/400/252" />
+                        </div>
+                    </div>
+                    <div class="details col-md-6 text-right">
+                        <h3 class="product-title">بيتزا بالمايونيز</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="review-no">41 تقييم</span>
+                        </div>
+                        <p class="product-description">نص اختبار نص اختبار نص اختبار نص اختبار نص اختبار نص اختبار نص
+                            اختبار نص اختبار نص اختبار نص اختبار نص اختبار نص اختبار.</p>
+                        <h4 class="price">السعر الحالى: <span>$180</span></h4>
+                        <p class="vote"><strong>91%</strong> من المشترين ابدوا اعجابهم بهذا الصنف <strong>(87
+                                صوت)</strong>
+                        </p>
+                        <h5 class="sizes">الاحجام:
+                            <span class="size font-weight-normal mx-0" data-toggle="tooltip" title="small">صغير</span> -
+                            <span class="size font-weight-normal mx-0" data-toggle="tooltip" title="medium">وسط</span> -
+                            <span class="size font-weight-normal mx-0" data-toggle="tooltip" title="large">جامبو</span>
+                        </h5>
+                        <div class="action">
+                            <button class="btn btn-outline-info btn-lg rounded-0" type="button"><span
+                                    class="fa fa-shopping-cart"></span> إضافة للسلة</button>
+                            <button class="btn btn-lg btn-outline-danger rounded-0" type="button"><span
+                                    class="fa fa-heart"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-rest">
+            <div class="card my-5">
+                <div class="card-header text-right"><i class="fa fa-coffee"
+                    aria-hidden="true"></i> قائمة المشربات</div>
+                <div class="card-body">
+                    <!-- food row -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img class="card-img-top" src="../img/any.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center text-space">عصير المانجا</h5>
+                                    <hr>
+                                    <p class="display-4 text-primary">27.05 $</p>
+                                    <hr>
+                                    <p>
+                                        <a href="#" class="btn btn-outline-info btn-sm rounded-0">إضافة للسلة</a>
+                                        <a href="#" class="btn btn-info btn-sm rounded-0">عرض المنتج</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img class="card-img-top" src="../img/any.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center text-space">عصير الجوافة</h5>
+                                    <hr>
+                                    <p class="display-4 text-primary">36.10 $</p>
+                                    <hr>
+                                    <p>
+                                        <a href="#" class="btn btn-outline-info btn-sm rounded-0">إضافة للسلة</a>
+                                        <a href="#" class="btn btn-info btn-sm rounded-0">عرض المنتج</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img class="card-img-top" src="../img/any.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center text-space">مشروب غازي</h5>
+                                    <hr>
+                                    <p class="display-4 text-primary">48.65 $</p>
+                                    <hr>
+                                    <p>
+                                        <a href="#" class="btn btn-outline-info btn-sm rounded-0">إضافة للسلة</a>
+                                        <a href="#" class="btn btn-info btn-sm rounded-0">عرض المنتج</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-4">
+                                <img class="card-img-top" src="../img/any.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center text-space">لبن طازج</h5>
+                                    <hr>
+                                    <p class="display-4 text-primary">87.35 $</p>
+                                    <hr>
+                                    <p>
+                                        <a href="#" class="btn btn-outline-info btn-sm rounded-0">إضافة للسلة</a>
+                                        <a href="#" class="btn btn-info btn-sm rounded-0">عرض المنتج</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- footer -->
+    <footer dir="rtl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 depts">
+                    <h3 class="my-2">الأقسام الرئيسية</h3>
+                    <p class="my-3"><a href="#">الرئيسية</a></p>
+                    <p class="my-3"><a href="#">المطاعم</a></p>
+                    <p class="my-3"><a href="#">من نحن</a></p>
+                    <p class="my-3"><a href="#">اتصل بنا</a></p>
+                </div>
+                <div class="col-md-4 col-sm-12 column">
+                    <h2 class="my-2">عن مطعمنا</h2>
+                    <p>موقع مطعمنا هو منصة تقدم خدمات توصيل المأكولات الجاهزة من خلال المطاعم المختلفة المسجلة دلينا إلى
+                        المنازل مجانا من المطبخ إلى بيتك حيث يقوم بارسال افضل انواع المأكولات والمشروبات الجاهزة دون
+                        الحاجه الى النزول للمطاعم عن طريق نخبة من
+                        افضل عملاء التوصيل للمنازل.</p>
+                    <i class="fa fa-facebook fa-lg fa-fw"></i>
+                    <i class="fa fa-google-plus fa-lg fa-fw"></i>
+                    <i class="fa fa-twitter fa-lg fa-fw"></i>
+                    <i class="fa fa-linkedin fa-lg fa-fw"></i>
+                    <i class="fa fa-youtube fa-lg fa-fw"></i>
+                    <i class="fa fa-yahoo fa-lg fa-fw"></i>
+
+                </div>
+                <div class="col-md-4 col-sm-12 column tags">
+                    <h2 class="my-2">كلمات مفتاحية</h2>
+                    <span>طعام</span>
+                    <span>عصائر</span>
+                    <span>وجبات</span>
+                    <span>جاهزة</span>
+                    <span>مطعم</span>
+                    <span>توصيل</span>
+                    <span>أكلات سريعه</span>
+                    <span>مشروبات</span>
+                    <span>طعام صحى</span>
+                    <span>اللحوم</span>
+                    <span>مطبخ شرقي</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>مطعمنا ٢٠١٩ &copy; جميع الحقوق محفوظه</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

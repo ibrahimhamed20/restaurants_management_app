@@ -1,3 +1,4 @@
+/*global $, alert, console*/
 console.log('hello from restaurants system!');
 // toggle navbar side
 $(document).ready(function () {
@@ -6,3 +7,10 @@ $(document).ready(function () {
         e.preventDefault();
     });
 });
+
+$(function() {
+    'use strict';
+    $('.navbar-nav li a').click(function () {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    });
+})
